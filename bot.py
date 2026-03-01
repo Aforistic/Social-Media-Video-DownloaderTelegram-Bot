@@ -467,7 +467,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
             return
 
         title        = info.get("title", "video")[:60]
-        caption_text = f"🎬 *{title}*\n📦 {human_size(size)}\n✅ @YourBotUsername"
+        caption_text = f"🎬 *{title}*\n📦 {human_size(size)}\n✅ @InternetDownloaderBot"
 
         await query.edit_message_text("📤 Uploading…")
         try:
